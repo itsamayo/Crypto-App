@@ -13,6 +13,7 @@ void main() async {
     home: new Center(
       child: new CryptoListWidget(currencies),
     ),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
@@ -23,7 +24,7 @@ Future<List> getCurrencies() async {
 }
 
 class CryptoListWidget extends StatelessWidget {
-  final List<MaterialColor> _colors = [Colors.blue, Colors.indigo, Colors.red];
+  final List<MaterialColor> _colors = [Colors.pink, Colors.blue, Colors.teal];
   final List _currencies;
 
   CryptoListWidget(this._currencies);
@@ -32,12 +33,12 @@ class CryptoListWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       body: _buildBody(),
-      backgroundColor: Colors.blue,
-      floatingActionButton: new FloatingActionButton(onPressed: () {
-        // Do something when FAB is pressed
-      },
-        child: new Icon(Icons.add_alert),
-      ),
+      backgroundColor: Colors.blue[400],
+      // floatingActionButton: new FloatingActionButton(onPressed: () {
+      //   // Do something when FAB is pressed
+      // },
+      //   child: new Icon(Icons.add_alert),
+      // ),
     );
   }
 
@@ -54,7 +55,7 @@ class CryptoListWidget extends StatelessWidget {
 
   Widget _getAppTitleWidget() {
     return new Text(
-      'Cryptocurrencies',
+      'CryptoMate',
       style: new TextStyle(
           color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0),
     );
