@@ -1,4 +1,4 @@
-name: crypto_list
+name: cryptolistr
 description: A new Flutter application.
 
 dependencies:
@@ -9,9 +9,16 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.0
 
+flutter_icons:
+  image_path: "lib/images/logo.png" 
+  android: true
+  ios: "Example-Icon"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  flutter_launcher_icons: "^0.5.2"
 
 
 # For information on the generic Dart part of this file, see the

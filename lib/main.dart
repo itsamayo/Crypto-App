@@ -55,7 +55,7 @@ class CryptoListWidget extends StatelessWidget {
 
   Widget _getAppTitleWidget() {
     return new Text(
-      'CryptoMate',
+      'cryptolistr',
       style: new TextStyle(
           color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0),
     );
